@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+#pageFront {
+	width: 457px;
+	height: 300px;
+	background: url(../gfx/interface/widgetFront.png) -78px 0 no-repeat;
+}
+
+#pageBack {
+	width: 457px;
+	height: 300px;
+	background: url(../gfx/interface/widgetBack.png) no-repeat;
+	display: none;
+}
+
+.money:after {
+	content: "$";
+	color: rgb( 75, 75, 75 );
+	font-style: italic;
+}
+
+.active {
+	cursor: default !important;
+}

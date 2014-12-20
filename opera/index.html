@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>SimAquarium</title>
+		
+		<link rel="stylesheet" href="css/layout.css" type="text/css">
+		<link rel="stylesheet" href="css/toolbar.css" type="text/css">
+		<link rel="stylesheet" href="css/config.css" type="text/css">
+		<link rel="stylesheet" href="css/views.css" type="text/css">
+		<link rel="stylesheet" href="css/viewAquarium.css" type="text/css">
+		<link rel="stylesheet" href="css/viewFish.css" type="text/css">
+		<link rel="stylesheet" href="css/viewScenery.css" type="text/css">
+		<link rel="stylesheet" href="css/viewLighting.css" type="text/css">
+		<link rel="stylesheet" href="css/viewAccessories.css" type="text/css">
+		<link rel="stylesheet" href="css/viewStatistics.css" type="text/css">
+
+		<script src="storageAPI.js"></script>
+		<script src="sandbox.js"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+		<script src="js/fish.js" type="text/javascript"></script>
+		<script src="js/scenery.js" type="text/javascript"></script>
+		<script src="js/config.js" type="text/javascript"></script>
+		<script src="js/lighting.js" type="text/javascript"></script>
+		<script src="js/filtration.js" type="text/javascript"></script>
+		<script src="js/statistics.js" type="text/javascript"></script>
+		<script src="js/fishshop.js" type="text/javascript"></script>
+		<script src="js/aquarium.js" type="text/javascript"></script>
+		<script src="js/events.js" type="text/javascript"></script>
+		<script src="js/uio.js" type="text/javascript"></script>
+		
+	</head>
+	<body>
+	
+		<div id="pageFront">
+	
+			<!-- T O O L B A R -->
+			<div id="aquariumToolbar">
+				<!-- AQUARIUM STATUS -->
+				<div id="toolbarStatus">
+					<div id="statusEvent"><div id="statusEventIcon"></div></div>
+					<div id="statusWater"><div id="statusWaterBar"></div></div>
+					<div id="statusMoney" class="money">102400</div>
+				</div>
+				<!-- AQUARIUM TOOLS -->
+				<div id="toolbarTools">
+					<div class="buttonTool" id="buttonTool0" title="Scare Fish"></div><div class="toolPrice money" id="toolPrice0">5</div>
+					<div class="buttonTool" id="buttonTool1" title="Attract Fish"></div><div class="toolPrice money" id="toolPrice1">5</div>
+					<div class="buttonTool" id="buttonTool2" title="Buy Food"></div><div class="toolPrice money" id="toolPrice2">20</div>
+					<div class="buttonTool" id="buttonTool3" title="Buy Medicine"></div><div class="toolPrice money" id="toolPrice3">20</div>
+					<div class="buttonTool" id="buttonTool4" title="Clean"></div><div class="toolPrice money" id="toolPrice4">10</div>
+					<div class="buttonTool" id="buttonTool5" title="Change Water"></div><div class="toolPrice money" id="toolPrice5">40</div>
+					<div class="buttonTool" id="buttonTool6" title="Buy Growth Hormone"></div><div class="toolPrice money" id="toolPrice6">100</div>
+					<div class="buttonTool" id="buttonTool7" title="Buy Breed Hormone"></div><div class="toolPrice money" id="toolPrice7">200</div>
+					<div id="speedLabel">Fish Speed</div><div id="speedBar"></div><div id="speedHandle"></div>
+				</div>
+				<!-- VIEW MODE TRIANGLE -->
+				<div id="pageMode"></div>
+			</div>
+
+			<!-- G A M E   V I E W S -->
+			<div id="aquariumViews">
+				<!-- SWICH VIEW BUTTONS -->
+				<div class="buttonView active" id="buttonView0" title="Aquarium"></div>
+				<div class="buttonView" id="buttonView1" title="Fish Shop"></div>
+				<div class="buttonView" id="buttonView2" title="Scenery"></div>
+				<div class="buttonView" id="buttonView3" title="Lighting"></div>
+				<div class="buttonView" id="buttonView4" title="Accessories"></div>
+				<div class="buttonView" id="buttonView5" title="Statistics"></div>
+				<div class="buttonTool" id="cameraTool"></div>
+				
+				<!-- VIEWS -->
+				
+				<!-- AQUARIUM VIEW -->
+				<div class="view" id="view0">
+					<canvas id="tank" width="360" height="240"></canvas>
+				</div>
+				<!-- FISH SHOP VIEW -->
+				<div class="view" id="view1">
+					<div class="tabBar">
+						<div class="tab active">Fish Shop</div>
+					</div>
+					<div class="headerInfo">New fish in: <span id="newFishTime">60</span> minutes</div>
+					
+					<div class="fishSlot" id="fishSlot0">
+						<div class="title"></div>
+						<div class="image"></div><div class="money">12345</div><div class="number">9</div>
+						<div class="button info"></div><div class="button buy"></div>
+					</div>
+					<div class="fishSlot" id="fishSlot1">
+						<div class="title"></div>
+						<div class="image"></div><div class="money">12345</div><div class="number">9</div>
+						<div class="button info"></div><div class="button buy"></div>
+					</div>
+					<div class="fishSlot" id="fishSlot2">
+						<div class="title"></div>
+						<div class="image"></div><div class="money">12345</div><div class="number">9</div>
+						<div class="button info"></div><div class="button buy"></div>
+					</div>
+					<div class="fishSlot" id="fishSlot3">
+						<div class="title"></div>
+						<div class="image"></div><div class="money">12345</div><div class="number">9</div>
+						<div class="button info"></div><div class="button buy"></div>
+					</div>
+					<div class="fishSlot" id="fishSlot4">
+						<div class="title"></div>
+						<div class="image"></div><div class="money">12345</div><div class="number">9</div>
+						<div class="button info"></div><div class="button buy"></div>
+					</div>
+					<div class="fishSlot" id="fishSlot5">
+						<div class="title"></div>
+						<div class="image"></div><div class="money">12345</div><div class="number">9</div>
+						<div class="button info"></div><div class="button buy"></div>
+					</div>
+					<div class="fishSlot" id="fishSlot6">
+						<div class="title"></div>
+						<div class="image"></div><div class="money">12345</div><div class="number">9</div>
+						<div class="button info"></div><div class="button buy"></div>
+					</div>
+					<div class="fishSlot" id="fishSlot7">
+						<div class="title"></div>
+						<div class="image"></div><div class="money">12345</div><div class="number">9</div>
+						<div class="button info"></div><div class="button buy"></div>
+					</div>
+					<div class="fishSlot" id="fishSlot8">
+						<div class="title"></div>
+						<div class="image"></div><div class="money">12345</div><div class="number">9</div>
+						<div class="button info"></div><div class="button buy"></div>
+					</div>
+				</div>
+				<!-- SCENERY VIEW -->
+				<div class="view" id="view2">
+					<div class="tabBar">
+						<div class="tab active">Scenery Shop</div>
+						<!--
+						<div class="tab">Scenery Shop</div>
+						<div class="tab">Scenery Creator</div>
+						-->
+					</div>
+					<div id="tabSceneries">
+					
+						<div class="scenerySlot" id="scenerySlot0">
+							<div class="title">Gravel</div>
+							<div class="image"></div><div class="money">0</div>
+							<div class="button choose off" id="buttonSceneryBuy0"></div>
+						</div>
+						<div class="scenerySlot" id="scenerySlot1">
+							<div class="title">Water Plants</div>
+							<div class="image"></div><div class="money">100</div>
+							<div class="button buy on" id="buttonSceneryBuy1"></div>
+							<div class="button sell off" id="buttonScenerySell1"></div>
+						</div>		
+						<div class="scenerySlot" id="scenerySlot2">
+							<div class="title">Moss Balls</div>
+							<div class="image"></div><div class="money">400</div>
+							<div class="button buy on" id="buttonSceneryBuy2"></div>
+							<div class="button sell off" id="buttonScenerySell2"></div>
+						</div>
+						<div class="scenerySlot" id="scenerySlot3">
+							<div class="title">Coral Reef</div>
+							<div class="image"></div><div class="money">1600</div>
+							<div class="button buy on" id="buttonSceneryBuy3"></div>
+							<div class="button sell off" id="buttonScenerySell3"></div>
+						</div>
+						<div class="scenerySlot" id="scenerySlot4">
+							<div class="title">Swimming Pool</div>
+							<div class="image"></div><div class="money">3200</div>
+							<div class="button buy on" id="buttonSceneryBuy4"></div>
+							<div class="button sell off" id="buttonScenerySell4"></div>
+						</div>
+						<div class="scenerySlot" id="scenerySlot5">
+							<div class="title">Underwater Cave</div>
+							<div class="image"></div><div class="money">6400</div>
+							<div class="button buy on" id="buttonSceneryBuy5"></div>
+							<div class="button sell off" id="buttonScenerySell5"></div>
+						</div>
+						<div class="scenerySlot" id="scenerySlot6">
+							<div class="title">Pirates' Treasure</div>
+							<div class="image"></div><div class="money">12800</div>
+							<div class="button buy on" id="buttonSceneryBuy6"></div>
+							<div class="button sell off" id="buttonScenerySell6"></div>
+						</div>
+						<div class="scenerySlot" id="scenerySlot7">
+							<div class="title">Web Browsers</div>
+							<div class="image"></div><div class="money">25600</div>
+							<div class="button buy on" id="buttonSceneryBuy7"></div>
+							<div class="button sell off" id="buttonScenerySell7"></div>
+						</div>
+						<div class="scenerySlot" id="scenerySlot8">
+							<div class="title">Seashells</div>
+							<div class="image"></div><div class="money">51200</div>
+							<div class="button buy on" id="buttonSceneryBuy8"></div>
+							<div class="button sell off" id="buttonScenerySell8"></div>
+						</div>
+					</div>
+					
+					
+				</div>
+				<!-- LIGHTING VIEW -->
+				<div class="view" id="view3">
+					<div class="tabBar">
+						<div class="tab active">Lighting Shop</div>
+					</div>
+						<div id="tabLightingShop">
+						
+							<div class="lightSlot" id="lightSlot0">
+								<div class="title">Fullbright</div>
+								<div class="image"></div><div class="money">0</div>
+								<div class="button choose off" id="buttonLightBuy0"></div>
+							</div>
+							<div class="lightSlot" id="lightSlot1">
+								<div class="title">Wide Light</div>
+								<div class="image"></div><div class="money">100</div>
+								<div class="button buy on" id="buttonLightBuy1"></div>
+								<div class="button sell off" id="buttonLightSell1"></div>
+							</div>		
+							<div class="lightSlot" id="lightSlot2">
+								<div class="title">Diagonal Light</div>
+								<div class="image"></div><div class="money">300</div>
+								<div class="button buy on" id="buttonLightBuy2"></div>
+								<div class="button sell off" id="buttonLightSell2"></div>
+							</div>
+							<div class="lightSlot" id="lightSlot3">
+								<div class="title">Five Light Up</div>
+								<div class="image"></div><div class="money">600</div>
+								<div class="button buy on" id="buttonLightBuy3"></div>
+								<div class="button sell off" id="buttonLightSell3"></div>
+							</div>
+							<div class="lightSlot" id="lightSlot4">
+								<div class="title">Five Lights Down</div>
+								<div class="image"></div><div class="money">1000</div>
+								<div class="button buy on" id="buttonLightBuy4"></div>
+								<div class="button sell off" id="buttonLightSell4"></div>
+							</div>
+							<div class="lightSlot" id="lightSlot5">
+								<div class="title">Horizontal Lights</div>
+								<div class="image"></div><div class="money">1500</div>
+								<div class="button buy on" id="buttonLightBuy5"></div>
+								<div class="button sell off" id="buttonLightSell5"></div>
+							</div>
+							<div class="lightSlot" id="lightSlot6">
+								<div class="title">Corner Lights</div>
+								<div class="image"></div><div class="money">2100</div>
+								<div class="button buy on" id="buttonLightBuy6"></div>
+								<div class="button sell off" id="buttonLightSell6"></div>
+							</div>
+							<div class="lightSlot" id="lightSlot7">
+								<div class="title">Triple Spotlights</div>
+								<div class="image"></div><div class="money">2800</div>
+								<div class="button buy on" id="buttonLightBuy7"></div>
+								<div class="button sell off" id="buttonLightSell7"></div>
+							</div>
+							<div class="lightSlot" id="lightSlot8">
+								<div class="title">Star lights</div>
+								<div class="image"></div><div class="money">3600</div>
+								<div class="button buy on" id="buttonLightBuy8"></div>
+								<div class="button sell off" id="buttonLightSell8"></div>
+							</div>
+						
+						</div>
+				</div>
+				<!-- ACCESSORIES VIEW -->
+				<div class="view" id="view4">
+					<div class="tabBar">
+						<div class="tab active" id="tabButtonFilterShop">Filters Shop</div>
+						<div class="tab" id="tabButtonBackgroundShop">Backgrounds Shop</div>
+					</div>
+					
+					<div id="tabFilterShop">
+						
+							<div class="filterSlot" id="filterSlot0">
+								<div class="title">Box Filter</div>
+								<div class="image"></div><div class="money">0</div>
+								<div class="button choose off" id="buttonFilterBuy0"></div>
+							</div>
+							<div class="filterSlot" id="filterSlot1">
+								<div class="title">Canister Filter</div>
+								<div class="image"></div><div class="money">120</div>
+								<div class="button buy on" id="buttonFilterBuy1"></div>
+								<div class="button sell off" id="buttonFilterSell1"></div>
+							</div>
+							<div class="filterSlot" id="filterSlot2">
+								<div class="title">Underground Filter</div>
+								<div class="image"></div><div class="money">240</div>
+								<div class="button buy on" id="buttonFilterBuy2"></div>
+								<div class="button sell off" id="buttonFilterSell2"></div>
+							</div>
+							<div class="filterSlot" id="filterSlot3">
+								<div class="title">Fluidized Bed Filter</div>
+								<div class="image"></div><div class="money">960</div>
+								<div class="button buy on" id="buttonFilterBuy3"></div>
+								<div class="button sell off" id="buttonFilterSell3"></div>
+							</div>
+							<div class="filterSlot" id="filterSlot4">
+								<div class="title">Power Filter</div>
+								<div class="image"></div><div class="money">1920</div>
+								<div class="button buy on" id="buttonFilterBuy4"></div>
+								<div class="button sell off" id="buttonFilterSell4"></div>
+							</div>
+							<div class="filterSlot" id="filterSlot5">
+								<div class="title">Advanced Power Filter</div>
+								<div class="image"></div><div class="money">7680</div>
+								<div class="button buy on" id="buttonFilterBuy5"></div>
+								<div class="button sell off" id="buttonFilterSell5"></div>
+							</div>
+					
+					</div>
+					<div id="tabBackgroundShop">
+
+					
+					</div>
+					
+				</div>
+				<!-- STATISTICS VIEW -->
+				<div class="view" id="view5">
+					<div class="tabBar">
+						<div class="tab active" id="tabButtonFishList">Fish List</div>
+						<div class="tab" id="tabButtonStatistics">Tank Info</div>
+					</div>
+					<div id="tabFishList" style="display: block;">
+					
+						<div id="fishTableIcons"></div>
+						<div id="fishTableInfo">No fish in the tank.</div>
+						
+						<div id="fishTableContainer">
+						
+							
+
+						
+						
+						</div>
+					
+					
+					
+					</div>
+					<div id="tabStatistics" style="display: none;">
+					
+						<div id="fishStats">Fish Statistics:</div>
+						
+						<div id="statFishNumberLabel">Fish number: <span id="statFishNumber">1</span></div>
+						<div id="statFishBirthsLabel">Fish births: <span id="statFishBirths">0</span></div>
+						<div id="statFishDeathsLabel">Fish deaths: <span id="statFishDeaths">0</span></div>
+
+						
+						<div id="waterProperties">Tank Properties:</div>
+						
+						<div id="statPollutionLabel">Pollution: <span id="statPollution">0</span></div>
+						<div id="statFoodLabel">Food: <span id="statFood">0</span></div>
+						<div id="statMedicineLabel">Medicines: <span id="statMedicine">0</span></div>
+						<div id="statGrowHLabel">Growth hormones: <span id="statGrowH">0</span></div>
+						<div id="statBreedHLabel">Breed hormones: <span id="statBreedH">0</span></div>
+						
+						<div id="statDistractionLabel">Fish distraction: <span id="statDistraction">0</span></div>
+					
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="pageBack">
+			<div class="header">Configuration</div>
+			
+			<img id="img1" src="gfx/aquarium/fishes/fish24R.png">
+			<img id="img2" src="gfx/aquarium/fishes/fish24L.png">
+			<button id="confNewGame">New Game</button>
+			<input type="checkbox" id="confRelaxMode"></input><div id="confRelaxModeLabel">Enable Relax Mode</div>
+			<div id="confRelaxModeInfo">Relax Mode pauses the game, but you can still <br>buy and sell things and watch the fish in tank.</div>
+			<div id="confCopyrights">SimAquarium 2.1.6 -- design and coding Copyright © 2014 <a href="http://xtrsyz.org/" id="Copyrights">Satria Adhi</a></div>
+			
+		</div>
+		
+		
+		
+		<!-- WIDGET BUTTONS -->
+		<div class="buttonWidget" id="buttonWidget0"></div>
+		<div class="buttonWidget" id="buttonWidget1" title="Configuration"></div>
+		<div class="buttonWidget" id="buttonWidget2" title="Save & Exit"></div>
+	</body>
+</html>

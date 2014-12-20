@@ -1,0 +1,220 @@
+/*** ACCESSORIES VIEW ***/
+
+#view4 {
+	background: url(../gfx/interface/viewBackground.png);
+	display: none;
+}
+
+
+
+
+.filterSlot {
+	width: 110px;
+	height: 94px;
+	position: absolute;
+	background: rgb( 80, 80, 80 ) url(../gfx/view1/slotBg.png) 0 15px repeat-x;
+}
+
+#filterSlot0 { background-image: url(../gfx/view4/slot0.png); }
+#filterSlot1 { background-image: url(../gfx/view4/slot1.png); }
+#filterSlot2 { background-image: url(../gfx/view4/slot2.png); }
+#filterSlot3 { background-image: url(../gfx/view4/slot3.png); }
+#filterSlot4 { background-image: url(../gfx/view4/slot4.png); }
+#filterSlot5 { background-image: url(../gfx/view4/slot5.png); }
+
+
+.filterSlot .title {
+	color: rgb( 215, 215, 215);
+	font-size: 9px;
+	position: absolute;
+	top: 1px;
+	left: 2px;
+}
+
+.filterSlot .image {
+	width: 48px;
+	height: 31px;
+	position: absolute;
+	top: 15px;	
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-image: url(../gfx/aquarium/fishes/fish2R.png); */
+}
+
+.filterSlot .money {
+	color: rgb( 25, 25, 25);
+	font-size: 10px;
+	position: absolute;
+	top: 41px;
+	left: 65px;
+	width: 40px;
+	text-align: center;
+}
+
+.filterSlot  .button {
+	color: rgb( 25, 25, 25 );
+	background: rgb( 179, 167, 143 );
+	font-size: 10px;
+	position: absolute;
+	top: 79px;
+	width: 53px;
+	height: 13px;
+	text-align: center;
+	border: 1px solid rgb( 80, 80, 80 );
+	cursor: hand;
+}
+
+.filterSlot  .button.on:hover {
+	background: rgb( 255, 238, 204 );
+}
+
+.filterSlot  .button.on:active {
+	border-width: 2px;
+	width: 51px;
+	height: 11px;
+	background: rgb( 179, 167, 143 );
+}
+
+.filterSlot  .sell:after {
+	content: "Sell";
+}
+.filterSlot  .sell {
+	left: 55px;
+}
+
+.filterSlot  .buy:after {
+	left: 0;
+	content: "Buy";
+}
+
+.filterSlot  .choose:after {
+	left: 0;
+	content: "Choose";
+}
+
+.off {
+	cursor: default !important;
+	opacity: 0.2;
+}
+
+#filterSlot0 { top: 37px; left: 9px; }
+#filterSlot1 { top: 37px; left: 125px; }
+#filterSlot2 { top: 37px;	left: 241px; }
+#filterSlot3 { top: 138px; left: 9px; }
+#filterSlot4 { top: 138px; left: 125px; }
+#filterSlot5 { top: 138px; left: 241px; }
+
+
+
+
+
+/*** AQUARIUM BACKGROUNDS ***/
+
+#tabBackgroundShop {
+	display: none;
+}
+
+
+.backgroundSlot {
+	width: 64px;
+	height: 46px;
+	position: absolute;
+	background: rgb( 80, 80, 80 ) url(../gfx/view1/slotBg.png) 0 15px repeat-x;
+}
+
+#backgroundSlot0 { background-image: url(../gfx/view4/bg0.png); }
+#backgroundSlot1 { background-image: url(../gfx/view4/bg1.png); }
+#backgroundSlot2 { background-image: url(../gfx/view4/bg2.png); }
+#backgroundSlot3 { background-image: url(../gfx/view4/bg3.png); }
+#backgroundSlot4 { background-image: url(../gfx/view4/bg4.png); }
+#backgroundSlot5 { background-image: url(../gfx/view4/bg5.png); }
+#backgroundSlot6 { background-image: url(../gfx/view4/bg6.png); }
+#backgroundSlot7 { background-image: url(../gfx/view4/bg7.png); }
+#backgroundSlot8 { background-image: url(../gfx/view4/bg8.png); }
+#backgroundSlot9 { background-image: url(../gfx/view4/bg9.png); }
+#backgroundSlot10 { background-image: url(../gfx/view4/bg10.png); }
+#backgroundSlot11 { background-image: url(../gfx/view4/bg11.png); }
+#backgroundSlot12 { background-image: url(../gfx/view4/bg12.png); }
+#backgroundSlot13 { background-image: url(../gfx/view4/bg13.png); }
+#backgroundSlot14 { background-image: url(../gfx/view4/bg14.png); }
+
+
+.backgroundSlot .title {
+	color: rgb( 215, 215, 215);
+	font-size: 9px;
+	position: absolute;
+	top: 1px;
+	left: 2px;
+}
+
+
+.backgroundSlot .money {
+	color: rgb( 25, 25, 25);
+	font-size: 10px;
+	position: absolute;
+	top: 24px;
+	left: 25px;
+	width: 40px;
+	text-align: center;
+}
+
+.backgroundSlot  .button {
+	color: rgb( 25, 25, 25 );
+	background: rgb( 179, 167, 143 );
+	font-size: 10px;
+	position: absolute;
+	top: 46px;
+	width: 62px;
+	height: 13px;
+	text-align: center;
+	border: 1px solid rgb( 80, 80, 80 );
+	cursor: hand;
+}
+
+.backgroundSlot  .button.on:hover {
+	background: rgb( 255, 238, 204 );
+}
+
+.backgroundSlot  .button.on:active {
+	border-width: 2px;
+	width: 60px;
+	height: 11px;
+	background: rgb( 179, 167, 143 );
+}
+
+.backgroundSlot  .buy:after {
+	left: 0;
+	content: "Buy";
+}
+
+.off {
+	cursor: default !important;
+	opacity: 0.2;
+}
+
+#backgroundSlot0 { top: 37px; left: 10px; }
+#backgroundSlot1 { top: 37px; left: 79px; }
+#backgroundSlot2 { top: 37px; left: 148px; }
+#backgroundSlot3 { top: 37px; left: 217px; }
+#backgroundSlot4 { top: 37px; left: 286px; }
+
+#backgroundSlot5 { top: 103px; left: 10px; }
+#backgroundSlot6 { top: 103px; left: 79px; }
+#backgroundSlot7 { top: 103px; left: 148px; }
+#backgroundSlot8 { top: 103px; left: 217px; }
+#backgroundSlot9 { top: 103px; left: 286px; }
+
+#backgroundSlot10 { top: 169px; left: 10px; }
+#backgroundSlot11 { top: 169px; left: 79px; }
+#backgroundSlot12 { top: 169px; left: 148px; }
+#backgroundSlot13 { top: 169px; left: 217px; }
+#backgroundSlot14 { top: 169px; left: 286px; }
+
+
+/* fixes */
+#backgroundSlot1 .money { color: rgb( 80, 80, 80 ); }
+#backgroundSlot14 { background: none; border: 1px solid rgb( 80, 80, 80 ); height: 60px; width: 62px; }
+#backgroundSlot14 .button { left: -1px; }
+
+
+

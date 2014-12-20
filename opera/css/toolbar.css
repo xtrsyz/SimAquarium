@@ -1,0 +1,214 @@
+.buttonWidget {
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 12px;
+	background: url(../gfx/interface/buttonSmall.png);
+	cursor: hand;
+	-apple-dashboard-region: dashboard-region(control rectangle 0px 0px 0px 0px);
+}
+.buttonWidget:hover {
+	background-position: 28px 0;
+}
+.buttonWidget:active {
+	background-position: 14px 0;
+}
+#buttonWidget0 {
+	content: url(../gfx/interface/iconSmall0.png);
+	right: 50px;
+}
+#buttonWidget1 {
+	content: url(../gfx/interface/iconSmall1.png);
+	right: 32px;
+}
+#buttonWidget2 {
+	content: url(../gfx/interface/iconSmall2.png);
+	right: 14px;
+}
+#statusEvent {
+	width: 38px;
+	height: 39px;
+	position: absolute;
+	top: 35px;
+	right: 26px;
+	background: url(../gfx/interface/alertLight.png);
+}
+#statusEventIcon {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	display: none;
+	background: url(../gfx/interface/alertLightIcon0.png);
+}
+#statusWater {
+	width: 6px;
+	height: 34px;
+	position: absolute;
+	top: 37px;
+	right: 14px;
+	background: url(../gfx/interface/waterCondition.png);
+}
+#statusWaterBar {
+	width: 4px;
+	height: 0px;
+	position: absolute;
+	bottom: 1px;
+	left: 1px;
+	background: transparent url(../gfx/interface/waterConditionBar.png) repeat-x fixed 0 38px;
+}
+#statusMoney {
+	position: absolute;
+	right: 14px;
+	top: 80px;
+	width: 50px;
+	height: 10px;
+	font-size: 9px;
+	color: rgb( 25, 25, 25 );
+	text-align: center;
+}
+.buttonTool {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background: url(../gfx/interface/buttonMedium.png);
+	cursor: hand;
+	-apple-dashboard-region: dashboard-region(control rectangle 0px 0px 0px 0px);
+}
+.buttonTool:hover {
+	background-position: 40px 0;
+}
+.buttonTool:active {
+	background-position: 20px 0;
+}
+
+#buttonTool0 {
+	content: url(../gfx/interface/iconTool0.png);
+	top: 103px;
+	right: 42px;
+}
+#buttonTool1 {
+	content: url(../gfx/interface/iconTool1.png);
+	top: 103px;
+	right: 16px;
+}
+#buttonTool2 {
+	content: url(../gfx/interface/iconTool2.png);
+	top: 137px;
+	right: 42px;
+}
+#buttonTool3 {
+	content: url(../gfx/interface/iconTool3.png);
+	top: 137px;
+	right: 16px;
+}
+#buttonTool4 {
+	content: url(../gfx/interface/iconTool4.png);
+	top: 171px;
+	right: 42px;
+}
+#buttonTool5 {
+	content: url(../gfx/interface/iconTool5.png);
+	top: 171px;
+	right: 16px;
+}
+#buttonTool6 {
+	content: url(../gfx/interface/iconTool6.png);
+	top: 205px;
+	right: 42px;
+}
+#buttonTool7 {
+	content: url(../gfx/interface/iconTool7.png);
+	top: 205px;
+	right: 16px;
+}
+.toolPrice {
+	font-size: 9px;
+	color: rgb( 25, 25, 25 );
+	text-align: center;
+	width: 20px;
+	position: absolute;
+}
+#toolPrice0 {
+	top: 123px;
+	right: 42px;
+}
+#toolPrice1 {
+	top: 123px;
+	right: 16px;
+}
+#toolPrice2 {
+	top: 157px;
+	right: 42px;
+}
+#toolPrice3 {
+	top: 157px;
+	right: 16px;
+}
+#toolPrice4 {
+	top: 191px;
+	right: 42px;
+}
+#toolPrice5 {
+	top: 191px;
+	right: 16px;
+}
+#toolPrice6 {
+	top: 225px;
+	right: 42px;
+}
+#toolPrice7 {
+	top: 225px;
+	right: 16px;
+}
+#speedLabel {
+	position: absolute;
+	right: 12px;
+	top: 245px;
+	width: 54px;
+	height: 12px;
+	text-align: center;
+	font-size: 9px;
+}
+#speedBar {
+	position: absolute;
+	right: 14px;
+	top: 258px;
+	width: 50px;
+	height: 10px;
+	background: url(../gfx/interface/gameSpeedBar.png);
+	-apple-dashboard-region: dashboard-region(control rectangle 0px 0px 0px 0px);
+}
+#speedHandle {
+	position: absolute;
+	left: 416px;
+	top: 258px;
+	width: 13px;
+	height: 13px;
+	background: url(../gfx/interface/gameSpeedHandle.png);
+	-apple-dashboard-region: dashboard-region(control rectangle 0px 0px 0px 0px);
+}
+#pageMode {
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	bottom: 13px;
+	right: 9px;
+	background: url(../gfx/interface/viewMode.png);
+	cursor: hand;
+	-apple-dashboard-region: dashboard-region(control rectangle 0px 0px 0px 0px);
+	content: url(../gfx/interface/viewIcon0.png);
+}
+#pageMode:hover {
+	background-position: 28px 0;
+}
+
+#pageMode:active {
+	background-position: 14px 0;
+}
+#cameraTool {
+	content: url(../gfx/interface/iconToolCamera.png);
+	top: 257px;
+	left: 354px;
+}

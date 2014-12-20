@@ -1,0 +1,121 @@
+/*** VIEW BUTTONS ***/
+
+.buttonView {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 256px;
+	background: url(../gfx/interface/buttonBig.png);
+	cursor: pointer !important;
+	-apple-dashboard-region: dashboard-region(control rectangle 0px 0px 0px 0px);
+}
+
+#buttonView0 {
+	content: url(../gfx/interface/iconView0.png);
+	left: 14px;
+	background-position: 24px 0;
+}
+#buttonView1 {
+	content: url(../gfx/interface/iconView1.png);
+	left: 44px;
+}
+#buttonView2 {
+	content: url(../gfx/interface/iconView2.png);
+	left: 74px;
+}
+#buttonView3 {
+	content: url(../gfx/interface/iconView3.png);
+	left: 104px;
+}
+#buttonView4 {
+	content: url(../gfx/interface/iconView4.png);
+	left: 134px;
+}
+#buttonView5 {
+	content: url(../gfx/interface/iconView5.png);
+	left: 164px;
+}
+
+/*** VIEWS ***/
+
+.view {
+	width: 360px;
+	height: 240px;
+	position: absolute;
+	top: 10px;
+	left: 14px;
+}
+.view .header {
+	color: rgb( 250, 250, 250 );
+	font-size: 11px;
+	font-weight: bold;
+	width: 342px;
+	height: 14px;
+	position: absolute;
+	left: 9px;
+	top: 7px;
+}
+
+.view .headerInfo {
+	color: rgb( 25, 25, 25 );
+	font-size: 9px;
+	height: 14px;
+	position: absolute;
+	right: 9px;
+	top: 8px;
+}
+
+.view .tabBar {
+	color: rgb( 25, 25, 25 );
+	font-size: 11px;
+	font-weight: bold;
+	width: 350px;
+	height: 20px;
+	position: absolute;
+	left: 7px;
+	top: 7px;
+}
+
+.view .tabBar .tab {
+	float: left;
+	background:  rgb( 175, 175, 175 );
+	cursor: pointer !important;
+
+	color: rgb( 80, 80, 80 );
+	border-top: 1px solid rgb( 75, 75, 75 );
+	border-left: 1px solid rgb( 125, 125, 125 );
+	border-right: 1px solid rgb( 125, 125, 125 );
+	padding: 2px 6px 0 6px;
+	height: 15px;
+	margin: 2px 2px 0 2px;
+	font-weight: normal;
+	
+	
+}
+
+.view .tabBar .tab + .tab { background:  rgb( 165, 165, 165 ); }
+.view .tabBar .tab + .tab + .tab { background:  rgb( 155, 155, 155 ); }
+
+
+
+.view .tabBar .tab:hover {
+	border-top: 1px solid rgb( 75, 75, 75 );
+	border-left: 1px solid rgb( 125, 125, 125 );
+	border-right: 1px solid rgb( 125, 125, 125 );
+	color: rgb( 230, 230, 230 );
+}
+
+.view .tabBar .tab.active {
+	color: rgb( 25, 25, 25 );
+	border-top: 1px solid rgb( 225, 225, 225 );
+	border-left: 1px solid rgb( 125, 125, 125 );
+	border-right: 1px solid rgb( 125, 125, 125 );
+	font-weight: bold;
+	height: 16px;
+	margin: 2px 2px 0 2px;
+	
+}
+.view .tabBar .tab.active:hover {
+	background:  rgb( 175, 175, 175 ) !important;
+}
+

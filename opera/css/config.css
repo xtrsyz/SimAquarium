@@ -1,0 +1,75 @@
+/*** CONFIGURATION PAGE ***/
+
+#pageBack .header {
+	color: rgb( 25, 25, 25 );
+	font-size: 11px;
+	font-weight: bold;
+	width: 200px;
+	height: 14px;
+	position: absolute;
+	left: 23px;
+	top: 17px;
+}
+
+
+#pageBack a {
+text-decoration: none;
+
+}
+
+#confNewGame {
+	position: absolute;
+	top: 90px;
+	left: 165px;
+	
+	width: 126px;
+	height: 26px;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+#confRelaxMode {
+	position: absolute;
+	top: 165px;
+	left: 164px;
+	cursor: pointer;
+}
+
+#confRelaxModeLabel {
+	font-size: 12px;
+	position: absolute;
+	top: 166px;
+	left: 185px;
+}
+
+#confRelaxModeInfo {
+	font-size: 10px;
+	position: absolute;
+	top: 185px;
+	left: 120px;
+	text-align: center;
+	color: rgb( 80, 80, 80 );
+}
+
+#confCopyrights {
+	font-size: 10px;
+	position: absolute;
+	top: 260px;
+	left: 75px;
+}
+
+
+
+#img1 {
+	position: absolute;
+	top: 78px;
+	left: 100px;
+
+}
+
+#img2 {
+	position: absolute;
+	top: 78px;
+	left: 308px;
+
+}

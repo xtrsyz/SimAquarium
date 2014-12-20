@@ -1,0 +1,116 @@
+/*** SCENERY VIEW ***/
+
+#view3 {
+	background: url(../gfx/interface/viewBackground.png);
+	display: none;
+}
+
+
+
+
+
+
+
+.lightSlot {
+	width: 110px;
+	height: 61px;
+	position: absolute;
+	background: rgb( 80, 80, 80 ) url(../gfx/view1/slotBg.png) 0 15px repeat-x;
+}
+
+#lightSlot0 { background-image: url(../gfx/view3/slot0.png); }
+#lightSlot1 { background-image: url(../gfx/view3/slot1.png); }
+#lightSlot2 { background-image: url(../gfx/view3/slot2.png); }
+#lightSlot3 { background-image: url(../gfx/view3/slot3.png); }
+#lightSlot4 { background-image: url(../gfx/view3/slot4.png); }
+#lightSlot5 { background-image: url(../gfx/view3/slot5.png); }
+#lightSlot6 { background-image: url(../gfx/view3/slot6.png); }
+#lightSlot7 { background-image: url(../gfx/view3/slot7.png); }
+#lightSlot8 { background-image: url(../gfx/view3/slot8.png); }
+
+
+.lightSlot .title {
+	color: rgb( 215, 215, 215);
+	font-size: 9px;
+	position: absolute;
+	top: 1px;
+	left: 2px;
+}
+
+.lightSlot .image {
+	width: 48px;
+	height: 31px;
+	position: absolute;
+	top: 15px;	
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-image: url(../gfx/aquarium/fishes/fish2R.png); */
+}
+
+.lightSlot .money {
+	color: rgb( 25, 25, 25);
+	font-size: 10px;
+	position: absolute;
+	top: 24px;
+	left: 65px;
+	width: 40px;
+	text-align: center;
+}
+
+.lightSlot  .button {
+	color: rgb( 25, 25, 25 );
+	background: rgb( 179, 167, 143 );
+	font-size: 10px;
+	position: absolute;
+	top: 46px;
+	width: 53px;
+	height: 13px;
+	text-align: center;
+	border: 1px solid rgb( 80, 80, 80 );
+	cursor: hand;
+}
+
+.lightSlot  .button.on:hover {
+	background: rgb( 255, 238, 204 );
+}
+
+.lightSlot  .button.on:active {
+	border-width: 2px;
+	width: 51px;
+	height: 11px;
+	background: rgb( 179, 167, 143 );
+}
+
+.lightSlot  .sell:after {
+	content: "Sell";
+}
+.lightSlot  .sell {
+	left: 55px;
+}
+
+.lightSlot  .buy:after {
+	left: 0;
+	content: "Buy";
+}
+
+.lightSlot  .choose:after {
+	left: 0;
+	content: "Choose";
+}
+
+.off {
+	cursor: default !important;
+	opacity: 0.2;
+}
+
+
+
+#lightSlot0 { top: 37px; left: 9px; }
+#lightSlot1 { top: 37px; left: 125px; }
+#lightSlot2 { top: 37px;	left: 241px; }
+#lightSlot3 { top: 104px; left: 9px; }
+#lightSlot4 { top: 104px; left: 125px; }
+#lightSlot5 { top: 104px; left: 241px; }
+#lightSlot6 { top: 171px; left: 9px; }
+#lightSlot7 { top: 171px; left: 125px; }
+#lightSlot8 { top: 171px; left: 241px; }

@@ -1,0 +1,205 @@
+/*** STATISTICS VIEW ***/
+
+#view5 {
+	background: url(../gfx/interface/viewBackground.png);
+	display: none;
+}
+
+#tabStatistics{
+	display: none;
+}
+
+
+#tabStatistics {
+	font-size: 12px;
+}
+
+
+#tabStatistics div {
+	position: absolute;
+}
+
+#tabStatistics span {
+
+	color: rgb( 220, 220, 220 );
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+#fishStats, #waterProperties {
+	font-size: 13px;
+	font-weight: bold;
+
+
+}
+
+#fishStats {
+	top: 45px;	left: 22px;
+}
+#statFishNumberLabel {
+	top: 75px;	left: 22px;
+}
+#statFishBirthsLabel {
+	top: 95px;	left: 22px;
+}
+#statFishDeathsLabel {
+	top: 115px;	left: 22px;
+}
+
+						
+#waterProperties {
+	top: 45px;	left: 170px;
+}
+#statPollutionLabel {
+	top: 75px;	left: 170px;
+}
+#statFoodLabel {
+	top: 95px;	left: 170px;
+}
+#statMedicineLabel {
+	top: 115px;	left: 170px;
+}
+#statGrowHLabel {
+	top: 135px;	left: 170px;
+}
+#statBreedHLabel {
+	top: 155px;	left: 170px;
+}
+#statDistractionLabel{
+	top: 175px;	left: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*** FISH TABLE***/
+
+#fishTableIcons {
+	background: url(../gfx/view5/icons.png) no-repeat;
+	width: 102px;
+	height: 10px;
+	position: absolute;
+	top: 36px;
+	left: 128px;
+
+}
+
+
+#fishTableContainer {
+	position: absolute;
+	width: 342px;
+	height: 180px;
+	top: 50px;
+	left: 9px;
+	overflow: auto;
+
+}
+
+
+.fishTableRow {
+	height: 15px;
+	margin-bottom: 5px;
+	background-color: rgb( 170, 170, 170 );
+	width: 320px;
+}
+
+
+.fishTableRow .fishTableSpeciesName {
+	font-size: 10px;
+	float: left;
+	padding-top: 1px;
+	padding-left: 2px;
+	width: 110px;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	
+}
+
+
+
+.fishTableHealthBox, .fishTableHungerBox, .fishTableSickBox, .fishTableSizeBox {
+	width: 27px;
+	height: 15px;
+	background: rgb( 200, 200, 200 );
+	margin-right: 2px;
+	float: left;
+}
+
+
+
+.fishTableHealthBoxBar {
+	width: 25px;
+	height: 13px;
+	background: url(../gfx/view5/bar1.png) repeat-y;
+	margin: 1px 0 0 1px;
+
+}
+
+.fishTableHungerBoxBar {
+	width: 25px;
+	height: 13px;
+	background: url(../gfx/view5/bar2.png) repeat-y;
+	margin: 1px 0 0 1px;	
+}
+
+
+
+
+.fishTableSickBox, .fishTableSizeBox {
+	font-size: 9px;
+	text-align: center;
+	padding-top: 2px;
+	height: 13px;
+}
+
+
+.fishTableRow .money {
+	float: right;
+	font-size: 10px;
+	padding-top: 1px;
+	padding-right: 6px;
+}
+
+
+
+.fishTableRow  .button {
+	color: rgb( 25, 25, 25 );
+	background: rgb( 179, 167, 143 );
+	font-size: 10px;
+	width: 40px;
+	height: 13px;
+	text-align: center;
+	border: 1px solid rgb( 80, 80, 80 );
+	cursor: hand;
+	float: right;
+}
+.fishTableRow  .button:hover {
+	background: rgb( 255, 238, 204 );
+}
+.fishTableRow  .button:active {
+	border-width: 2px;
+	width: 38px;
+	height: 11px;
+	background: rgb( 179, 167, 143 );
+}
+.fishTableRow  .sell:after {
+	left: 55px;
+	content: "Sell";
+}
+
+#fishTableInfo {
+	position: absolute;
+	top: 50px;
+	left: 9px;
+	font-size: 11px;
+}
+
