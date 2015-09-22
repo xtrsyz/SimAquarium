@@ -265,7 +265,7 @@ var aquariumConstructor = function() {
 		return money;
 	}
 	this.resetMoney = function() {
-		money = 100;
+		money = 1000;
 		document.getElementById( "statusMoney" ).innerHTML = parseInt( money );
 	}	
 	
